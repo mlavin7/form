@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./forms.js" defer></script>
+
 </head>
 <body>
+    <section class="section1">
+        <form action="" class="form">
+            <label for="anrede">Anrede</label>
+            <select name="anrede" id="anrede">
+                <option value="Frau">Frau</option>
+                <option value="Herr">Herr</option>
+                <option value=" ">None</option>
+                <option value="Enbi">Enbi</option>
+              </select>
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" placeholder="vorname">
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" placeholder="nachname">
+            <label for="geburtsdatum">Geburtsdatum</label>
+            <input type="date" id="geburtsdatum">
+            <label for="strasse">Strasse</label>
+            <input type="text" id="strasse">
+            <label for="plz">PLZ</label>
+            <input type="number" id="plz" maxlength="4">
+            <label for="ort">ORT</label>
+            <input type="text" id="ort">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <label for="telg">Telefon G</label>
+            <input type="tel" id="telg">
+            <label for="telp">Telefon P</label>
+            <input type="tel" id="telp">
+           
+            <label for="agb">AGB</label>
+            <input type="checkbox" id="agb">
+            <fieldset>
+            <legend="newsLetter">Newsletter</legend>
+            
+            <input type="radio" id="ja" name="newsLetter" value="ja">
+            <label for="ja">Ja</label>
+            <input type="radio" id="nein" name="newsLetter" value="nein" >
+            <label for="nein">nein</label>
+            </fieldset>
+
+
+            <label for="bemerkung">Bemerkung</label>
+            <input type="" id="bemerkung">
+            <input type="submit" value="Submit">
+        
+        </form>
+    </section>
+
     
+
+
+
+
+
 </body>
 </html>
