@@ -18,7 +18,7 @@ let bemerkung = document.getElementById("bemerkung")
 
 function onSubmit(){
     console.log("lala")
-    event.defaultPrevent
+    event.preventDefault()
     validation()
     setStore()
 }
@@ -37,13 +37,75 @@ function onSubmit(){
 // };
 
 function validation(){
-    console.log( " vali vali")
-    if (!vorname.value){
-        vorname.classList.add("error")
-    }
+    event.preventDefault()
+    
+        if (!anrede.value){ 
+            document.getElementById("errorMessage1").innerHTML= `please select your salute`
+        } else { 
+            document.getElementById("errorMessage1").innerHTML= ``
+        }
+
+        if (!vorname.value){ 
+            document.getElementById("errorMessage2").innerHTML= `please add your name`
+        } else { 
+            document.getElementById("errorMessage2").innerHTML= ``
+        }
+        if (!nachname.value){ 
+            document.getElementById("errorMessage3").innerHTML= `please add your surname `
+        } else { 
+            document.getElementById("errorMessage3").innerHTML= ``
+        }
+        if (!geburtsdatum.value){ 
+            document.getElementById("errorMessage4").innerHTML= `please select your birthday`
+        } else { 
+            document.getElementById("errorMessage4").innerHTML= ``
+        }if (!strasse.value){ 
+            document.getElementById("errorMessage5").innerHTML= `please fill your adress`
+        } else { 
+            document.getElementById("errorMessage5").innerHTML= ``
+        }
+        if (!plz.value){ 
+            document.getElementById("errorMessage6").innerHTML= `please select your salute`
+        } else { 
+            document.getElementById("errorMessage6").innerHTML= ` please fill your PLZ`
+        }
+        if (!ort.value){ 
+            document.getElementById("errorMessage7").innerHTML= `please select your ORT`
+        } else { 
+            document.getElementById("errorMessage7").innerHTML= ``
+        }
+        if (!email.value){ 
+            document.getElementById("errorMessage8").innerHTML= `please insert your E-mail`
+        } else { 
+            document.getElementById("errorMessage8").innerHTML= ``
+        }
+        if (!telg.value ){ 
+            document.getElementById("errorMessage9").innerHTML= `please give your telephone number`
+        } else { 
+            document.getElementById("errorMessage9").innerHTML= ``
+        }
+        if (!telp.value){ 
+            document.getElementById("errorMessage10").innerHTML= `please give your telephone number`
+        } else { 
+            document.getElementById("errorMessage10").innerHTML= ``
+        }
+        if (!agb.value){ 
+            document.getElementById("errorMessage11").innerHTML= `please accept the AGB`
+        } else { 
+            document.getElementById("errorMessage11").innerHTML= ``
+        }
+        if (!bemerkung.value){ 
+            document.getElementById("errorMessage13").innerHTML= `please provide relevan informations / observations`
+        } else { 
+            document.getElementById("errorMessage13").innerHTML= ``
+        }
+     
+
+    
 }
 
  function setStore(){
+    event.preventDefault()
     console.log( "lulu")
 if( anrede.value && vorname.value && nachname.value && geburtsdatum.value
     && strasse.value &&  plz.value && ort.value && email.value && telg.value 
@@ -70,8 +132,14 @@ if( anrede.value && vorname.value && nachname.value && geburtsdatum.value
 
 
 function saveRadioValue(radioButton) {
+    event.preventDefault()
     let selectedValue = radioButton.value;
 sessionStorage.setItem( "newsletter", selectedValue)
+if (!selectedValue){ 
+    document.getElementById("errorMessage12").innerHTML= `please select an option`
+} else { 
+    document.getElementById("errorMessage12").innerHTML= ``
+}
 
     }
 // testing individual validation

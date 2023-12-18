@@ -2,6 +2,23 @@
     display: flex;
     flex-direction: column;
 }
- .error{
-    border: 12px solid red ;
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #f8edeb;
+
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background: #ffd7ba;
+    border-radius: 5px;
+    width: ;
+}
+.error-message{
+    color: red;
+    font-weight: bold;
  }
