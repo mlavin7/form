@@ -23,37 +23,37 @@
 
                 <option value="Enbi">Enbi</option>
 
-            </select>
+            </select> 
 
             <label for="vorname">Vorname</label>
-            <input type="text" id="vorname" placeholder="vorname">
+            <input type="text" id="vorname" placeholder="vorname" >
 
             <label for="nachname">Nachname</label>
-            <input type="text" id="nachname" placeholder="nachname">
+            <input type="text" id="nachname" placeholder="nachname" required>
 
-            <label for="geburtsdatum">Geburtsdatum</label>
-            <input type="date" id="geburtsdatum">
+            <label for="geburtsdatum" >Geburtsdatum</label>
+            <input type="date" id="geburtsdatum"  max= "2005-12-30"required>
 
             <label for="strasse">Strasse</label>
-            <input type="text" id="strasse">
+            <input type="text" id="strasse" required>
 
             <label for="plz">PLZ</label>
-            <input type="number" id="plz" maxlength="4">
+            <input type="number" id="plz" maxlength="4" required>
 
             <label for="ort">ORT</label>
-            <input type="text" id="ort">
+            <input type="text" id="ort" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" autocomplete="email">
+            <input type="email" id="email" autocomplete="email" required>
 
             <label for="telg">Telefon G</label>
-            <input type="tel" id="telg">
+            <input type="tel" id="telg" required>
 
             <label for="telp">Telefon P</label>
-            <input type="tel" id="telp">
+            <input type="tel" id="telp" required>
            
             <label for="agb">AGB</label>
-            <input type="checkbox" id="agb">
+            <input type="checkbox" id="agb" value="Accepted" checked required>
 
             <fieldset>
             <legend="newsLetter" id="nl">Newsletter</legend>
@@ -67,7 +67,7 @@
 
 
             <label for="bemerkung">Bemerkung</label>
-            <input type="" id="bemerkung">
+            <textarea name="bemerkung" id="bemerkung" cols="30" rows="10" placeholder="Deine bemerkung" required></textarea>
 
             <input type="submit" value="Submit">
         

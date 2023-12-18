@@ -18,23 +18,30 @@ let bemerkung = document.getElementById("bemerkung")
 
 function onSubmit(){
     console.log("lala")
-    event.preventDefault()
+    event.defaultPrevent
     validation()
     setStore()
 }
 
 
+// function validation(){
+//     console.log("lele")
+// if (!anrede.value || !vorname.value || !nachname.value || !geburtsdatum.value
+//     || !strasse.value || !plz.value || !ort.value || !email.value || !telg.value 
+//     || !telp.value ||! agb.value ||  !bemerkung.value ){
+//    alert(" please complete all fields")
+// }
+// else if (plz.value < 1000 || plz.value > 9999) {
+//     alert("Please insert valid PLZ")
+// }
+// };
+
 function validation(){
-    console.log("lele")
-if (!anrede.value || !vorname.value || !nachname.value || !geburtsdatum.value
-    || !strasse.value || !plz.value || !ort.value || !email.value || !telg.value 
-    || !telp.value ||! agb.value ||  !bemerkung.value ){
-   alert(" please complete all fields")
+    console.log( " vali vali")
+    if (!vorname.value){
+        vorname.classList.add("error")
+    }
 }
-else if (plz.value < 1000 || plz.value > 9999) {
-    alert("Please insert valid PLZ")
-}
-};
 
  function setStore(){
     console.log( "lulu")
@@ -67,5 +74,30 @@ function saveRadioValue(radioButton) {
 sessionStorage.setItem( "newsletter", selectedValue)
 
     }
- 
- 
+// testing individual validation
+// function anredeValidation() {
+
+//     vorname.addEventListener("input", function(e){
+//       vorname.setCustomValidity('');//remove message when new text is input
+//     });
+//     vorname.addEventListener("invalid", function(e){
+//       vorname.setCustomValidity('Please enter your name');
+//       vorname.style.borer = "red" //custom validation message for invalid text
+//     });}
+
+// document.addEventListener('DOMContentLoaded', function () {
+    // Get the input element
+    
+
+//     // Add an event listener to the input field
+//     vorname.addEventListener('input', function () {
+//         // Check if the input is empty
+//         if (vorname.value.trim() === '') {
+//             // If empty, set a red border directly using inline style
+//             vorname.style.border = '2px solid red';
+//         } else {
+//             // If not empty, set the default border color using inline style
+//             vo.style.border = '2px solid #ccc';
+//         }
+//     });
+// })

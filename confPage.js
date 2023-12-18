@@ -1,7 +1,7 @@
         const anrede = sessionStorage.getItem("anrede") //< here i am geting ,my items
         const vorname = sessionStorage.getItem("vorname")
         const nachname = sessionStorage.getItem("nachname")
-        const geburtsdatum = sessionStorage.getItem("gebrtsdatum")
+        const geburtsdatum = sessionStorage.getItem("geburtsdatum")
         const strasse = sessionStorage.getItem ("strasse")
         const plz =sessionStorage.getItem("plz")
         const ort = sessionStorage.getItem("ort")
