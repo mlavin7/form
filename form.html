@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./forms.js" defer ></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -27,11 +29,11 @@
             <span id="errorMessage1" class="error-message"></span>
 
             <label for="vorname">Name</label>
-            <input type="text" id="vorname" placeholder="vorname" >
+            <input type="text" id="vorname" placeholder="First Name">
             <span id="errorMessage2" class="error-message"></span>
 
             <label for="nachname">Surname</label>
-            <input type="text" id="nachname" placeholder="nachname" >
+            <input type="text" id="nachname" placeholder="Last Name" >
             <span id="errorMessage3" class="error-message"></span>
 
             <label for="geburtsdatum" >Birthdate</label>
@@ -43,15 +45,15 @@
             <span id="errorMessage5" class="error-message"></span>
 
             <label for="plz">PLZ</label>
-            <input type="number" id="plz" maxlength="4" r>
+            <input type="number" id="plz" maxlength="4" placeholder="8000">
             <span id="errorMessage6" class="error-message"></span>
 
             <label for="ort">ORT</label>
-            <input type="text" id="ort" >
+            <input type="text" id="ort" placeholder=" city">
             <span id="errorMessage7" class="error-message"></span>
 
             <label for="email">Email</label>
-            <input type="email" id="email" autocomplete="email" >
+            <input type="email" id="email" autocomplete" placeholder="xxx@yy.com" >
             <span id="errorMessage8" class="error-message"></span>
 
             <label for="telg">Telephon G</label>
@@ -67,22 +69,26 @@
             <span id="errorMessage11" class="error-message"></span>
 
             <fieldset>
+            <div>
             <legend="newsLetter" id="nl">Newsletter</legend>
-            
+            </div>
+            <div>
             <input type="radio" id="newsLetter1" name="newsLetter" value="ja" onclick="saveRadioValue(this)">
             <label for="newsLetter1">Ja</label>
 
             <input type="radio" id="newsLetter" name="newsLetter" value="nein" onclick="saveRadioValue(this)">
             <label for="newsLetter">nein</label>
+            </div>
             </fieldset>
+            
             <span id="errorMessage12" class="error-message"></span>
 
 
             <label for="bemerkung">Observations</label>
-            <textarea name="bemerkung" id="bemerkung" cols="30" rows="10" placeholder="Deine bemerkung" ></textarea>
+            <textarea name="bemerkung" id="bemerkung" cols="30" rows="7" placeholder="Observations" ></textarea>
             <span id="errorMessage13" class="error-message"></span>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="button">
         
         </form>
     </section>

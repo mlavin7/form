@@ -132,7 +132,7 @@ if( anrede.value && vorname.value && nachname.value && geburtsdatum.value
 
 
 function saveRadioValue(radioButton) {
-    event.preventDefault()
+ 
     let selectedValue = radioButton.value;
 sessionStorage.setItem( "newsletter", selectedValue)
 if (!selectedValue){ 

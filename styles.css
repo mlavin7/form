@@ -1,24 +1,90 @@
-.form{
+
+*{
+    box-sizing: border-box;
+    border:0px;
+    padding: 0px;
+    border:0px;
+    font-family: 'Playfair Display', serif;
+}
+
+form{
     display: flex;
     flex-direction: column;
+
 }
 
 body{
     display: flex;
     flex-direction: column;
     background: #f8edeb;
+    height: 95vh;
+    width: 95vw;
+    justify-content: center;
+    padding: 5%;
+}
 
+label {
+    font-size: small;
+}
+input[type="checkbox" i] {
+    align-self: flex-start;
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    
+    border: initial;
+}
+
+input#agb{
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+    align-content:flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
 
 }
+
+
 
 section{
     display: flex;
     flex-direction: column;
     background: #ffd7ba;
     border-radius: 5px;
-    width: ;
+    padding: 5%;
+    
+    
+  
+
 }
 .error-message{
     color: red;
     font-weight: bold;
  }
+ input{
+    border-radius: 5px;
+    border: solid 2px darkgray
+ }
+ textarea{
+    border-radius: 5px;
+    border: solid 2px darkgray
+ }
+
+ .button{
+    height: fit-content;
+    width: 100%;
+    border: solid darkgray 2px;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    color:white; 
+ }
+ 
