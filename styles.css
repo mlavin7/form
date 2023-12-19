@@ -37,6 +37,9 @@ form{
     flex-direction: column;
     z-index: 1;
     position: relative;
+    align-content: center;
+    justify-content: center;
+  
    
 
 }
@@ -54,15 +57,32 @@ body{
     display: flex;
     flex-direction: column;
     background: #f8edeb;
-    height: 95%;
-    width: 95%;
+    height: 95vh;
+    width: 95vw;
     justify-content: center;
     padding: 5%;
+}
+
+#submitForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+#section1{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height:fit-content;
+ 
+ overflow: scroll;
 }
 
 label {
     font-size: small;
 }
+
 input[type="checkbox" i] {
     align-self: flex-start;
     background-color: initial;
@@ -70,8 +90,35 @@ input[type="checkbox" i] {
     appearance: auto;
     box-sizing: border-box;
     margin: 3px 3px 3px 4px;
-    
     border: initial;
+}
+
+ #confSection{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    
+ }
+
+#buttonHome{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-top: 5%;
+}
+
+#buttonConf{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 input#agb{
@@ -88,7 +135,9 @@ fieldset {
     padding: 0px;
 
 }
-
+textarea#bemerkung {
+    height: 60px;
+}
 
 
 section{
@@ -96,28 +145,32 @@ section{
     flex-direction: column;
     background:rgba(255, 215, 186, 0.623);
     border-radius: 5px;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 0%;
+    padding: 5%;
+    height: 90vh;
+    height: fit-content;
+    overflow:scroll
+    
+
 
 }
 
-.buttonsSection{
-    display: flex;
-    flex-direction: column;
-    width: inherit;
-    align-content:center;
-    justify-content: center;
 
-}
 .buttonContainer{
     display: flex;
-    flex-direction: row;
-    width: inherit;
-    align-content: space-between;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5%;
+    align-items: center;
 }
+
+#ButtonCourse {
+    display: flex;
+    align-items: center;
+
+}
+
+
 .error-message{
     color: red;
     font-weight: bold;
@@ -147,3 +200,13 @@ section{
  .forward{
     background-color: lightseagreen;
  }
+
+section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
