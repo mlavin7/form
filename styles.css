@@ -116,8 +116,7 @@ input[type="checkbox" i] {
 
 .data{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; 
     justify-content: space-around;
 }
 
@@ -149,9 +148,6 @@ section{
     height: 90vh;
     height: fit-content;
     overflow:scroll
-    
-
-
 }
 
 
@@ -167,9 +163,7 @@ section{
 #ButtonCourse {
     display: flex;
     align-items: center;
-
 }
-
 
 .error-message{
     color: red;
@@ -183,7 +177,6 @@ section{
     border-radius: 5px;
     border: solid 2px darkgray
  }
-
  .button{
     height: fit-content;
     width: 300px;
@@ -210,3 +203,100 @@ section::-webkit-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  /* table*/
+/* th{
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+} */
+
+th{
+    font-size: x-large;
+    writing-mode: vertical-lr;
+}
+
+.leftText{
+    text-align: end;
+    text-transform: capitalize;
+    padding-right: 8px;
+}
+.rightText{
+    text-align: start;
+    text-transform: capitalize;
+    padding-left: 8px; 
+    color: rgb(3, 117, 112);
+    font-stretch: wider;
+    font-weight: bolder;
+    
+
+}
+
+  .table{
+    margin-top: 5%;
+
+    display: flex;
+    justify-items: center;
+    position: relative
+    
+  }
+
+  #tableTiltle{
+    writing-mode:vertical-rl;
+    display: flex;
+    justify-content: center;
+    font-size:3rem;
+    transform: rotate(180deg);
+    color: rgb(3, 117, 112);
+    font-stretch:500% ;
+    font-weight: bolder;
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
+    
+  }
+
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+
+  p{
+    text-align: start;
+    border: 0;
+    padding: 0;
+  }
+
+.dataTitle{
+    color: rgb(3, 117, 112)
+
+}
+
+.completeName {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 560px) {
+    #tableTiltle{
+        writing-mode:initial;
+        display: flex;
+        justify-content: center;
+        font-size:3rem;
+        transform: rotate(0deg);
+        color: rgb(3, 117, 112);
+        font-stretch:500% ;
+        font-weight: bolder;
+        padding: 0%;
+        border: 0%;
+        margin: 0%;
+    }}

@@ -17,23 +17,99 @@
     <h1>Thank you for joining Setilingua</h1>  
     
     
-    <p id="salute"></p><br>
+    <p id="salute" class="completeName"></p><br>
 
         <p>We wanted to take a moment to express our sincere gratitude for subscribing to <b>SetiLingua</b>. Welcome to our community!</p>
-        
-        <p>Your interest and support mean a lot to us, and we are thrilled to have you on board. By subscribing, you've opened the door to a world of [describe what the webpage offers, e.g., exclusive content, updates, special offers, etc.]. We are committed to delivering valuable information and engaging content directly to your inbox.</p>
-                
-        <p>If you ever have any questions, feedback, or suggestions, please feel free to reach out to us. We value your input and are always looking for ways to enhance your experience.</p>
-        
-        <p>Once again, thank you for choosing <b>Setilingua</b>. We look forward to sharing exciting updates and meaningful content with you.</p>
-        
         <p>Best Regards,</p>
-        <p>SetiLingua Team</p><br>
+        <p>SetiLingua Team</p>
         <p>Please proceed to review your information, confirm it, or go back to the form.</p>
 
         <div class="data">
+<div class="wrap">
+            <h2 id="tableTiltle">Your Data</h2> 
+
+            
+            <table class="table">
+            
+            <tr class="field">
+                <td class="leftText">Salutation</td>
+                <td  class="rightText" id="anrede"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">First Name</td>
+                <td class="rightText" id="vorname" ></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Last Name</td>
+                <td class="rightText" id="nachname" ></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Birthday</td>
+                <td class="rightText" id="geburtsdatum"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Street</td>
+                <td class="rightText" id="strasse"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Plz</td>
+                <td class="rightText" id="plz"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Ort</td>
+                <td class="rightText" id="ort"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">E-mail</td>
+                <td class="rightText" id="email"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Telephone g</td>
+                <td class="rightText" id="telg"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Telephone p</td>
+                <td class="rightText" id="telp"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">Agb</td>
+                <td class="rightText" id="agb"></td>
+            </tr>
+            <tr class="field">
+                <td class="leftText">NewsLetter Subscription</td>
+                <td class="rightText" id="newsletter"></td>
+            </tr>
+            <!-- <tr class="field">
+                <td ></td>
+                <td class="rightText" id="bemerkung"></td>
+            </tr> -->
+            
+            </table>
+        </div>
+            <P >Comments</P>
+            <P  id="bemerkung" class="dataTitle"></P>
+       </div>
+       
+     
+        <div id="buttonConf">
+        
+        <a href="./confirmed.html">
+        <button class="button forward">Confirm</button>
+        </a>
+        
+        <a href= "#" onclick="history.go(-1)">
+        <button class="button back">Back</button>
+        </a>
+        </div>
+        </section>
     
-        <div class="displayResults">
+
+</body>
+</html>
+  
+
+<!-- this down is supose to come after the salutation in case i am unable to do the table -->
+        <!-- <div class="displayResults">
             <p class="pbold"><b>Anrede:</b></p>
             <p class="pInfo" id="anrede"></p>
         </div>
@@ -86,21 +162,4 @@
             <p class="pInfo" id="bemerkung"></p>
         </div>
 
-        
-       </div>
-     
-        <div id="buttonConf">
-        
-        <a href="./confirmed.html">
-        <button class="button forward">Confirm</button>
-        </a>
-        
-        <a href= "#" onclick="history.go(-1)">
-        <button class="button back">Back</button>
-        </a>
-        </div>
-        </section>
-    
-
-</body>
-</html>
+         -->
