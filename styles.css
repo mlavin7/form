@@ -5,7 +5,37 @@
     padding: 0px;
     border:0px;
     font-family: 'Playfair Display', serif;
+    font-size: 15px;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #f8edeb;
+    height: 100vh;
+    width: 95vw;
+    align-items: center;
+    padding: 5%;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background:rgba(255, 215, 186, 0.623);
+    border-radius: 5px;
+    padding: 5%;
+    max-width: fit-content;
+    height: fit-content;
+    overflow: scroll;
+  
+    
+}
+
+h1{
+    font-size: x-large;
+}
+
 
 .backgroundImage{
 position: fixed;
@@ -53,15 +83,7 @@ form{
     flex-wrap: wrap;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    background: #f8edeb;
-    height: 95vh;
-    width: 95vw;
-    justify-content: center;
-    padding: 5%;
-}
+
 
 #submitForm{
     display: flex;
@@ -139,16 +161,7 @@ textarea#bemerkung {
 }
 
 
-section{
-    display: flex;
-    flex-direction: column;
-    background:rgba(255, 215, 186, 0.623);
-    border-radius: 5px;
-    padding: 5%;
-    height: 90vh;
-    height: fit-content;
-    overflow:scroll
-}
+
 
 
 .buttonContainer{
@@ -275,6 +288,7 @@ th{
     text-align: start;
     border: 0;
     padding: 0;
+    margin: 5px;
   }
 
 .dataTitle{
@@ -285,6 +299,11 @@ th{
 .completeName {
     text-transform: capitalize;
 }
+#commentFieldTextTitle{
+    font-size: medium;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 560px) {
     #tableTiltle{
