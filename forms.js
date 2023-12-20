@@ -66,7 +66,7 @@ function validation(){
         }
         if (!plz.value){ 
             document.getElementById("errorMessage6").innerHTML= `please fill your PLZ`
-        } else if (plz.value < 1000 || plz.value > 9999){
+        } else if (plz.value < 1000 && plz.value > 9999){
             document.getElementById("errorMessage6").innerHTML= `please add a valid PLZ numbler`
         }
         else { 
