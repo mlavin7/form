@@ -97,11 +97,7 @@ function validation(){
         } else { 
             document.getElementById("errorMessage11").innerHTML= ``
         }
-        if (!bemerkung.value){ 
-            document.getElementById("errorMessage13").innerHTML= `please provide relevan informations / observations`
-        } else { 
-            document.getElementById("errorMessage13").innerHTML= ``
-        }
+      
      
 
     
@@ -112,7 +108,7 @@ function validation(){
     console.log( "lulu")
 if( anrede.value && vorname.value && nachname.value && geburtsdatum.value
     && strasse.value &&  (plz.value < 10000 && plz.value > 999) && ort.value && email.value && telg.value 
-    && telp.value &&  agb.value  && bemerkung.value)
+    && telp.value &&  agb.value  )
     {
    console.log("set store f is being readed")
 
