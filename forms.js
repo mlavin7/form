@@ -65,9 +65,12 @@ function validation(){
             document.getElementById("errorMessage5").innerHTML= ``
         }
         if (!plz.value){ 
-            document.getElementById("errorMessage6").innerHTML= `please select your salute`
-        } else { 
-            document.getElementById("errorMessage6").innerHTML= ` please fill your PLZ`
+            document.getElementById("errorMessage6").innerHTML= `please fill your PLZ`
+        } else if (plz.value < 1000 || plz.value > 9999){
+            document.getElementById("errorMessage6").innerHTML= `please add a valid PLZ numbler`
+        }
+        else { 
+            document.getElementById("errorMessage6").innerHTML= ``
         }
         if (!ort.value){ 
             document.getElementById("errorMessage7").innerHTML= `please select your ORT`
@@ -108,7 +111,7 @@ function validation(){
     event.preventDefault()
     console.log( "lulu")
 if( anrede.value && vorname.value && nachname.value && geburtsdatum.value
-    && strasse.value &&  plz.value && ort.value && email.value && telg.value 
+    && strasse.value &&  (plz.value < 10000 && plz.value > 999) && ort.value && email.value && telg.value 
     && telp.value &&  agb.value  && bemerkung.value)
     {
    console.log("set store f is being readed")
