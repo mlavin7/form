@@ -5,7 +5,7 @@
     padding: 0px;
     border:0px;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 body{
@@ -33,11 +33,11 @@ section{
 }
 
 h1{
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 h2{
-    font-size: large;
+    font-size: x-large;
 }
 
 .backgroundImage{
@@ -106,7 +106,7 @@ form{
 }
 
 label {
-    font-size: small;
+    font-size: large;
 }
 
 input[type="checkbox" i] {
